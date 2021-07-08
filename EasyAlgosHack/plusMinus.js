@@ -25,10 +25,11 @@ function plusMinus(arr){
     let zer = zero/n;
 
     console.log(pos.toFixed(6) + "\n" + neg.toFixed(6) + "\n" + zero.toFixed(6))
-
     
 }
 console.log(plusMinus(arr))
+
+
 
 
 

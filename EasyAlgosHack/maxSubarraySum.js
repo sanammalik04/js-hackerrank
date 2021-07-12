@@ -1,4 +1,5 @@
 //accepts an array of integers and a number called num. The function should calculate the maximum sum of num consecutive elements in the array
+//SLIDING WINDOW APPROACH
 
 
 function maxSubarraySum(arr, num){

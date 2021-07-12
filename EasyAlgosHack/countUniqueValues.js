@@ -9,7 +9,7 @@ function countUniqueValues(numArr){
   let i = 0;
   //j pointer will only go through the entire loop, so we only have one iteration
   for(let j = 1; j < numArr.length; j++){
-      //here we will compare the numArr index on j and i: numArr[i] and arr[j]
+      //here we will compare the numArr index on j and i: numArr[i] and numArr[j]
       // we move j if they are equal and if not then we move i up by one then we put the value where i is. 
       if(numArr[i] !== numArr[j]){
           i++
@@ -27,7 +27,7 @@ console.log(countUniqueValues([1, 1, 1, 2, 2, 3, 4, 5, 5, 5, 6, 7]))
 
 
 //Sovled using built in unique javascript function
-function countUniqueValues(numArr){
+function countUniqueValue(numArr){
     let arr = [...new Set(numArr)].length
     console.log(arr)
 }

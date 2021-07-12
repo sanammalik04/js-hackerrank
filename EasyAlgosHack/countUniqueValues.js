@@ -1,6 +1,10 @@
 
 //solved using multiple pointer technique
 function countUniqueValues(numArr){
+    //we need this bc if we have an empty array then it will return 1 bc we are returning 1 + 0
+    if(arr.length === 0){
+        return 0
+    }
     //setting i pointer to 0
   let i = 0;
   //j pointer will only go through the entire loop, so we only have one iteration

@@ -14,7 +14,7 @@ function maxSubarraySum(arr, num){
         maxSum += arr[i];
     }
     tempSum = maxSum;
-    //this second loop starts from 0, I will start from the num
+    //this second loop starts from the num
     for(let i = num; i < arr.length; i++){
         //here I am adding the three numbers and subtracting the first
         tempSum = tempSum - arr[i - num] + arr[i];

@@ -1,0 +1,19 @@
+function isSubsequence(str1, str2) {
+    //starting at the beginning 
+    let i = 0; //i is on the first strg
+    let j = 0; //j is on the second strg
+
+    if(!str1) return true
+    while(j < str2.length){
+        if(str2[j] === str1[i]) i++;
+        if(i === str1.length) return true;
+        j++
+    }
+    return false;
+
+}
+
+  console.log(isSubsequence('hello' , 'hello world')) // true
+  console.log(isSubsequence('sing' , 'sting')) // true
+  console.log(isSubsequence('abc' , 'acb')) //false ( order matters )
+  

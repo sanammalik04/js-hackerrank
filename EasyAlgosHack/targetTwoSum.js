@@ -63,7 +63,24 @@ const getTargetIndex = (array, target) => {
     }
     return indArr
 
-
 };
 
 console.log(getTargetIndex(array, target))
+
+//using map 
+const getTargetIndexes1 = (array, target) => {
+    let arrayList = new Map()
+
+    for(let i = 0; i < array.length; i++){
+        //store the current number
+        const currentNum = array[i]
+        const compliment = target - currentNum
+
+        if(arrayList.has(compliment)){
+            return [arrayList.get(compliment), i]
+        }else {
+            arrayList.set(currentNum, i)
+        }
+    }
+
+}
